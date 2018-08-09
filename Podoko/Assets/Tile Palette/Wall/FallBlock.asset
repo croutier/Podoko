@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa2a666775d5f8489bc588598702689, type: 3}
+  m_Name: FallBlock
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1139926256776602, guid: ec873d1d320c1d9418b0226abbb20c2b, type: 2}

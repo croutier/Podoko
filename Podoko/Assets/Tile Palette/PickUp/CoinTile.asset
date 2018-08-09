@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa2a666775d5f8489bc588598702689, type: 3}
+  m_Name: CoinTile
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1988591798277760, guid: ee739008050d3a04ab7c55bddc9b9a03, type: 2}
+  offSet: {x: 0.5, y: 0.5}
