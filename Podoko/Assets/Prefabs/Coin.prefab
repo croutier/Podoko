@@ -102,6 +102,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 004a614adf0c0034dac8fa1166a5121b, type: 3}
   - {fileID: 21300000, guid: dbf1b1b3e8bc7ce4cb8de4af667aeeae, type: 3}
   - {fileID: 21300000, guid: dfe8d43b6f72ea74197234a12bffcbb5, type: 3}
+  animSprite2: []
   bucle: 1
   pause: 0
 --- !u!212 &212513216603728474
@@ -137,7 +138,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1c2e32e4723f63d4abd644ba5033c55d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -19,7 +19,7 @@ public class coinBehavior : MonoBehaviour {
         {
             if (isRed)
             {
-                stage.addRedCoin();                
+                stage.addRedCoin();                               
             }
             else
             {

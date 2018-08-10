@@ -10,6 +10,8 @@ public class characterController2D : MonoBehaviour {
     public float maxSpeed = 7;
     public float fallSpeed = 2;
 
+    bool floating;
+    float floatingSpeed = 2;
     Vector2 targetVelocity;
     bool grounded;
     Vector2 groundNormal;
@@ -34,7 +36,15 @@ public class characterController2D : MonoBehaviour {
         contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
         contactFilter.useLayerMask = true;
     }
-
+    public void fly(float speed)
+    {
+        floatingSpeed = speed;
+        floating = true;
+    }
+    public void stopFlying()
+    {
+        floating = false;
+    }
     public void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
@@ -56,7 +66,11 @@ public class characterController2D : MonoBehaviour {
 
     void FixedUpdate()
     {
-        velocity.y = -fallSpeed;
+        if(floating)
+            velocity.y = fallSpeed;
+        else
+            velocity.y = -fallSpeed;
+
         velocity.x = targetVelocity.x;
 
         grounded = false;

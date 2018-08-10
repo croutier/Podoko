@@ -16,7 +16,7 @@ public class GateScript : MonoBehaviour {
 	void Update () {
         if (stage.GateState()&&!isOpen)
         {           
-            gameObject.GetComponent<SimpleAnimation2D>().togleAnimSet();
+            gameObject.GetComponent<SimpleAnimation2D>().toggleAnimSet();
             isOpen = true;
         }
 

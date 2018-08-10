@@ -9,10 +9,14 @@ public class StageManager : MonoBehaviour {
     [SerializeField] int coinsNedded;
     [SerializeField] int redCoinsNedded;
 
-    int coinsLeft;
-    int redCoinsLeft;
+    
     bool gateOpen = false;
     bool redGateOpen = false;
+    int coinsLeft;
+    int redCoinsLeft;
+    public int RedCoinsLeft { get { return redCoinsLeft; } }
+
+    
 
     static private StageManager instance = null;
     static public StageManager Instance { get { return instance; } }
@@ -20,7 +24,7 @@ public class StageManager : MonoBehaviour {
     
     private void Awake()
     {
-        instance = this;
+        instance = this;        
     }
     private void Start()
     {

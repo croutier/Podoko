@@ -71,7 +71,29 @@ private void Start()
             }
         }
     }
-    public void togleAnimSet()
+
+    public void toggleBucle()
+    {
+        if (bucle)
+            bucle = false;
+        else
+            bucle = true;
+    }
+
+    public void swapAnimFrames(int indexSet1,int indexSet2)
+    {
+        if (indexSet1 < animSprite.Length && indexSet2 < animSprite2.Length)
+        {
+            animSprite[indexSet1] = animSprite2[indexSet2];
+        }
+        else
+            Debug.LogError("SimpleAnimation Error:" + gameObject.name + " cant swap frames");
+            
+    }
+
+
+
+    public void toggleAnimSet()
     {
         Sprite[] temp = animSprite;
         animSprite = animSprite2;
